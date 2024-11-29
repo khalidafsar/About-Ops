@@ -1,41 +1,89 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Background Animation */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    background: #1e2a47;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #ffb6b6, #ff8c8c);
-    color: #333;
-    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(45deg, #f39c12, #d35400, #8e44ad);
+    background-size: 600% 600%;
+    animation: gradientBackground 10s ease infinite;
 }
 
-.container {
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main Content Centering */
+.overlay {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
 }
 
-h1 {
-    font-size: 3rem;
+.content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
     color: #fff;
-    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.2rem;
-    color: #fff;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
+.email {
+    font-size: 1rem;
+    color: #ff8c00;
+    margin-top: 20px;
+}
+
+.email a {
+    color: #ffeb3b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.email a:hover {
+    color: #ffffff;
+}
+
+/* Countdown Styles */
+.countdown {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#countdown {
+    font-size: 2rem;
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+/* Loader Animation */
 .loader {
     border: 8px solid #f3f3f3;
     border-top: 8px solid #ff7f50;
@@ -43,25 +91,10 @@ p {
     width: 50px;
     height: 50px;
     animation: spin 2s linear infinite;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-.email {
-    font-size: 1rem;
-    color: #fff;
-    margin-top: 10px;
-}
-
-.email a {
-    color: #ff7f50;
-    text-decoration: none;
-}
-
-.email a:hover {
-    text-decoration: underline;
 }
