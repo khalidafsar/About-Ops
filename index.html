@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khalid Ventures</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Open+Sans&family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     /* General Styles */
     body {
@@ -13,6 +13,9 @@
       padding: 0;
       background-color: #1b1b1b; /* Dark background */
       color: white;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
     }
 
     /* Hero Section */
@@ -26,28 +29,7 @@
       text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7); /* Strong text shadow */
       padding: 100px 20px;
       text-align: center;
-    }
-
-    /* Subheading */
-    .subheading {
-      font-family: 'Noto Sans Bengali', sans-serif; /* Apply Bengali font */
-      font-size: 2.5em;
-      color: #ffcc00; /* Yellow highlight */
-      text-align: center;
-      margin-top: -20px;
-      font-weight: 700;
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    }
-
-    /* Body Content */
-    .content {
-      margin: 40px auto;
-      padding: 20px;
-      width: 80%;
-      max-width: 900px;
-      font-family: 'Open Sans', sans-serif;
-      line-height: 1.8;
-      color: #e0e0e0; /* Light grey for readability */
+      flex-grow: 1; /* Allow hero section to take up available space */
     }
 
     /* Footer Section */
@@ -58,20 +40,13 @@
       padding: 15px 20px;
       font-size: 1.2em;
       border-top: 3px solid #ff3366; /* Accent color line */
+      margin-top: auto; /* Ensure footer sticks to the bottom */
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
       .hero-title {
         font-size: 5em;
-      }
-
-      .subheading {
-        font-size: 2em;
-      }
-
-      .content {
-        width: 90%;
       }
     }
 
@@ -82,13 +57,7 @@
   <!-- Hero Section -->
   <header>
     <h1 class="hero-title">Motherland or Death</h1>
-    <h2 class="subheading">মাতৃভূমি অথবা মৃত্যু</h2>
   </header>
-
-  <!-- Body Content Section -->
-  <div class="content">
-    <!-- Placeholder for content or images -->
-  </div>
 
   <!-- Footer Section -->
   <footer class="footer">
