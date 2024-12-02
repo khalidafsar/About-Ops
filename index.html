@@ -1,26 +1,99 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Under Development</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motherland or Death</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1b1b1b; /* Dark background */
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 7em;
+      text-transform: uppercase;
+      background: linear-gradient(45deg, #ff3366, #ffcc00); /* Bright gradient */
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7); /* Strong text shadow */
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    /* Subheading */
+    .subheading {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5em;
+      color: #ffcc00; /* Yellow highlight */
+      text-align: center;
+      margin-top: -20px;
+      font-weight: 700;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Body Content */
+    .content {
+      margin: 40px auto;
+      padding: 20px;
+      width: 80%;
+      max-width: 900px;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.8;
+      color: #e0e0e0; /* Light grey for readability */
+    }
+
+    /* Footer Section */
+    .footer {
+      background-color: #333; /* Dark footer */
+      color: #e0e0e0;
+      text-align: center; /* Center align the text */
+      padding: 15px 20px;
+      font-size: 1.2em;
+      border-top: 3px solid #ff3366; /* Accent color line */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 5em;
+      }
+
+      .subheading {
+        font-size: 2em;
+      }
+
+      .content {
+        width: 90%;
+      }
+    }
+
+  </style>
 </head>
 <body>
-    <div class="overlay">
-        <div class="content">
-            <h1>We Are Almost There!</h1>
-            <p>Our website is under construction, but we're working hard to bring something amazing.</p>
-            <div class="loader"></div>
-            <p class="email">For inquiries, contact us at <a href="mailto:hello@khalidventures.com">hello@khalidventures.com</a></p>
-            <div class="countdown">
-                <p>Launching In:</p>
-                <div id="countdown"></div>
-            </div>
-        </div>
-    </div>
 
-    <script src="script.js"></script>
+  <!-- Hero Section -->
+  <header>
+    <h1 class="hero-title">Motherland or Death</h1>
+    <h2 class="subheading">A call to arms, a cry for survival, a declaration of devotion.</h2>
+  </header>
+
+  <!-- Body Content Section -->
+  <div class="content">
+    <!-- Placeholder for content or images -->
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>Copyright © Khalid Ventures, 2024</p>
+  </footer>
+
 </body>
 </html>
