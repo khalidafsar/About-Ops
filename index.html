@@ -14,8 +14,10 @@
       background-color: #1b1b1b; /* Dark background */
       color: white;
       display: flex;
-      flex-direction: column;
-      height: 100vh;
+      justify-content: center; /* Horizontally center the content */
+      align-items: center; /* Vertically center the content */
+      height: 100vh; /* Full viewport height */
+      text-align: center; /* Center align text inside the element */
     }
 
     /* Hero Section */
@@ -27,9 +29,7 @@
       -webkit-background-clip: text;
       color: transparent;
       text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7); /* Strong text shadow */
-      padding: 100px 20px;
-      text-align: center;
-      flex-grow: 1; /* Allow hero section to take up available space */
+      padding: 20px;
     }
 
     /* Footer Section */
@@ -40,7 +40,9 @@
       padding: 15px 20px;
       font-size: 1.2em;
       border-top: 3px solid #ff3366; /* Accent color line */
-      margin-top: auto; /* Ensure footer sticks to the bottom */
+      position: fixed;
+      bottom: 0;
+      width: 100%; /* Make the footer full-width */
     }
 
     /* Responsive Design */
@@ -61,7 +63,7 @@
 
   <!-- Footer Section -->
   <footer class="footer">
-    <p>Copyright © Khalid Ventures, 2024</p>
+    <p>© Khalid Ventures, 2024</p>
   </footer>
 
 </body>
