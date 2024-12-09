@@ -1,70 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khalid Ventures</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #1b1b1b; /* Dark background */
-      color: white;
-      display: flex;
-      justify-content: center; /* Horizontally center the content */
-      align-items: center; /* Vertically center the content */
-      height: 100vh; /* Full viewport height */
-      text-align: center; /* Center align text inside the element */
-    }
-
-    /* Hero Section */
-    .hero-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 7em;
-      text-transform: uppercase;
-      background: linear-gradient(45deg, #ff3366, #ffcc00); /* Bright gradient */
-      -webkit-background-clip: text;
-      color: transparent;
-      text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7); /* Strong text shadow */
-      padding: 20px;
-    }
-
-    /* Footer Section */
-    .footer {
-      background-color: #333; /* Dark footer */
-      color: #e0e0e0;
-      text-align: center; /* Center align the text */
-      padding: 15px 20px;
-      font-size: 1.2em;
-      border-top: 3px solid #ff3366; /* Accent color line */
-      position: fixed;
-      bottom: 0;
-      width: 100%; /* Make the footer full-width */
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .hero-title {
-        font-size: 5em;
-      }
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Under Development</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="overlay">
+        <div class="content">
+            <h1>We Are Almost There!</h1>
+            <p>Our website is under construction, but we're working hard to bring something amazing.</p>
+            <div class="loader"></div>
+            <p class="email">For inquiries, contact us at <a href="mailto:hello@khalidventures.com">hello@khalidventures.com</a></p>
+            <div class="countdown">
+                <p>Launching In:</p>
+                <div id="countdown"></div>
+            </div>
+        </div>
+    </div>
 
-  <!-- Hero Section -->
-  <header>
-    <h1 class="hero-title">Motherland or Death</h1>
-  </header>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <p>© Khalid Ventures, 2024</p>
-  </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
